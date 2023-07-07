@@ -126,7 +126,10 @@ alias neovide='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonle
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-neofetch
+# Display information about current session
+#neofetch
+#Display pokemons
+pokemon-colorscripts --no-title -r 1,3,6
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
