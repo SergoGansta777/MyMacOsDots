@@ -111,6 +111,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+eval $(thefuck --alias)
+eval "$(zoxide init zsh --cmd cd)"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -121,6 +123,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias neovide='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless'
+alias ls="exa" # ls
+alias ll='exa -lF --git --icons' # list, size, type, git
+alias llm='exa -lGd --git --sort=modified' # long list, modified date sort
+alias la='exa -lhHigUmuSa --time-style=long-iso --git --color-scale' # all list
+alias lx='exa -lhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias lS='exa -1' # one column, just names
+alias lt='exa --tree --level=2' # tree
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -133,3 +142,5 @@ pokemon-colorscripts --no-title -r 1,3,6
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
