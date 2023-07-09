@@ -144,3 +144,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.config/.p10k.zsh.
+[[ ! -f ~/.config/.p10k.zsh ]] || source ~/.config/.p10k.zsh
