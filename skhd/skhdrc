@@ -20,6 +20,15 @@ shift + alt - x : yabai -m space --mirror x-axis
 # toggle window float
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
+# resize floating window in center
+shift + alt - i : \
+yabai -m window --resize bottom_right:20:20; \
+yabai -m window --resize top_left:-20:-20
+
+shift + alt - o : \
+yabai -m window --resize bottom_right:-20:-20; \
+yabai -m window --resize top_left:20:20
+
 # maximize a window
 shift + alt - m : yabai -m window --toggle zoom-fullscreen
 
@@ -73,7 +82,9 @@ ctrl + alt - l : yabai -m window --resize right:50:0; \
                   yabai -m window --resize left:50:0
 
 # Enable / Disable gaps in current workspace
-ctrl + alt - g  : yabai -m space --toggle padding; yabai -m space --togle gap
+ctrl + alt - g  :  \
+     yabai -m space --toggle padding; \
+     yabai -m space --toggle gap
 
 # Equalize size of windows
 ctrl + alt - e : yabait -m space balance
