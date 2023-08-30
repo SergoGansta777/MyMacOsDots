@@ -147,3 +147,5 @@ export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/.p10k.zsh.
 [[ ! -f ~/.config/.p10k.zsh ]] || source ~/.config/.p10k.zsh
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="$PATH:/Users/sergejnehorosev/.dotnet/tools"
