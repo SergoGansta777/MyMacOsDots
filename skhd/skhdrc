@@ -20,6 +20,15 @@ shift + alt - x : yabai -m space --mirror x-axis
 # toggle window float
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
+# minimize window shortcut if apple window manager is turned off
+alt - m : yabai -m window --minimaze
+
+# Make window zoom to parent node: lalt - f 
+ctrl + lalt - f : yabai -m window --toggle zoom-parent;
+
+# Toggle split orientation of the selected windows node: shift + lalt - s
+shift + lalt - s : yabai -m window --toggle split
+
 # resize floating window in center
 shift + alt - i : \
 yabai -m window --resize bottom_right:20:20; \

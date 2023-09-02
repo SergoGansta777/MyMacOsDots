@@ -122,7 +122,6 @@ eval "$(zoxide init zsh --cmd cd)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias neovide='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless'
 alias ls="exa" # ls
 alias ll='exa -lF --git --icons' # list, size, type, git
 alias llm='exa -lGd --git --sort=modified' # long list, modified date sort
