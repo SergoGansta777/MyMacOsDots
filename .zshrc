@@ -148,3 +148,5 @@ export NNN_TMPFILE="$HOME/.config/nnn/.lastd"
 [[ ! -f ~/.config/.p10k.zsh ]] || source ~/.config/.p10k.zsh
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="$PATH:/Users/sergejnehorosev/.dotnet/tools"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
