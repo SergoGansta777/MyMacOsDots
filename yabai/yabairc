@@ -18,7 +18,7 @@ yabai -m config window_border               on
 yabai -m config window_border_width         2
 yabai -m config window_opacity_duration     0.3
 yabai -m config window_border_radius        11
-yabai -m config window_animation_duration   0.35
+yabai -m config window_animation_duration   0.3
 yabai -m config window_border_blur          on
 yabai -m config window_border_hidpi         on
 yabai -m config window_animation_frame_rate 120
