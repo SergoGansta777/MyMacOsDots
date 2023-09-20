@@ -1,2 +1,2 @@
-multigrid = true
+multigrid = false
 frame = "Buttonless"
