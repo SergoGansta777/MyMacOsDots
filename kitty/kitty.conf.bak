@@ -3,12 +3,16 @@ italic_font      auto
 bold_font        auto
 bold_italic_font auto
 font_size 14.0
+macos_option_as_alt       both
+macos_show_window_title_in all
+macos_menubar_title_max_length 50
 hide_window_decorations titlebar-only
-draw_minimal_borders yes
-background_opacity 0.9
-background_blur 20
+background_opacity 0.87
+background_blur 25
 tab_bar_edge bottom
+window_padding_width 6
 tab_bar_style powerline
+allow_remote_control yes
 tab_powerline_style slanted
 tab_activity_symbol 
 tab_title_max_length 25
@@ -28,6 +32,7 @@ map cmd+t launch --type=tab --cwd=current
 map cmd+n launch --type=os-window --cwd=current
 
 macos_colorspace default
+shell_integration no-sudo
 
 
 
