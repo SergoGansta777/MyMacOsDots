@@ -1,2 +1,5 @@
 raycast/
 **/*.log
+yarn/global
+NvChadcpp.bak
+fish/functions

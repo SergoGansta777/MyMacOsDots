@@ -1,2 +1,4 @@
-multigrid = false
+multigrid = true
 frame = "Buttonless"
+vsync = true
+no-multigrid = false
