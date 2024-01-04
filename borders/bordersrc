@@ -1,11 +1,10 @@
-#!/bin/bash
-
 options=(
-  style=round
-  width=2.0
-  hidpi=on
-  active_color=0xffe1e3e4
-  inactive_color=0x80565f89
-  )
+	style=round
+	width=6.0
+	hidpi=on
+  active_color="glow(0xFFACAAFF)"
+	inactive_color=0x80565f89
+  blacklist="Superlist,Obsidian,Arc"
+)
 
 borders "${options[@]}"

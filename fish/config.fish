@@ -1,3 +1,8 @@
+export PATH="$HOME/.cargo/bin:$PATH"
+
+set -gx EDITOR nvim
+set -gx PF_INFO "ascii title os uptime pkgs wm shell editor"
+
 alias nvd='/Applications/Neovide.app/Contents/MacOS/neovide'
 alias ls="exa" # ls
 alias ll='exa -lF --git --icons' # list, size, type, git
@@ -7,17 +12,9 @@ alias lx='exa -lhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + ex
 alias lS='exa -1' # one column, just names
 alias lt='exa --tree --level=2' # tree
 
-export PATH="$HOME/.cargo/bin:$PATH"
+thefuck --alias | source
 
-function starship_transient_prompt_func
-    starship module character
-end
-function starship_transient_rprompt_func
-    starship module time
-end
 
 if status is-interactive
-
 end
 starship init fish | source
-enable_transience
