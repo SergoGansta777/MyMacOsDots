@@ -1,22 +1,22 @@
 palette = "catppuccin_mocha"
 
-format = '$all'
-right_format = '$time'
-
 [time]
-format = '⏱️[$time]($style) '
+disabled = true
+format = '⏱️ [$time]($style) '
 time_format = '%T'
 utc_time_offset = '-5'
 
 [sudo]
-style = 'bold green'
-symbol = '🎭'
+symbol = '🎭 '
+disabled = false
 
 [username]
 style_user = 'lavender bold'
 style_root = 'rosewater bold'
 format = ' [$user]($style) '
-show_always = true
+
+[git_commit]
+commit_hash_length = 4
 
 [character]
 disabled = true
@@ -52,6 +52,9 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+format = 'on [$symbol$branch(:$remote_branch)]($style)'
+# truncation_length = 4
+truncation_symbol = '…/'
 
 [golang]
 symbol = " "
@@ -89,12 +92,18 @@ symbol = "󰔷 "
 [nim]
 symbol = "󰆥 "
 
+[shell]
+disabled = true
+
 [nix_shell]
 symbol = " "
 
 [nodejs]
 disabled = true
 symbol = " "
+
+[os]
+disabled = true
 
 [os.symbols]
 Alpaquita = " "
@@ -162,6 +171,8 @@ symbol = " "
 truncation_length = 4
 truncation_symbol = '…/'
 style = 'mauve bold'
+read_only_style = '197'
+read_only = '  '
 format = '  [$path]($style)[$read_only]($read_only_style) '
 
 # palette tables should be last in the config ⚓️

@@ -4,7 +4,7 @@ options=(
 	hidpi=on
   active_color="glow(0xFFACAAFF)"
 	inactive_color=0x80565f89
-  blacklist="Superlist,Obsidian,Arc"
+  blacklist="Superlist,Obsidian,Arc,CleanMyMac X"
 )
 
 borders "${options[@]}"
