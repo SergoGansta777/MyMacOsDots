@@ -1,5 +1,7 @@
 palette = "catppuccin_mocha"
 
+command_timeout = 1000
+
 [time]
 disabled = true
 format = '⏱️ [$time]($style) '
@@ -52,7 +54,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-format = 'on [$symbol$branch(:$remote_branch)]($style)'
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
 # truncation_length = 4
 truncation_symbol = '…/'
 
